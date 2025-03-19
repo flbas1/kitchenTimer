@@ -1,0 +1,25 @@
+{
+    "name": "Angular, React, and Expo DevContainer",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+      "workspaceMount": "source=/Volumes/Lexar/Docker/dev-workspace,target=/workspace,type=bind,consistency=delegated",
+      "workspaceFolder": "/workspace",
+      "remoteUser": "root",
+    
+  
+    "extensions": [
+      "msjsdiag.vscode-react-native",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "angular.ng-template",
+      "ms-vscode.vscode-typescript-next"
+    ],
+    "postCreateCommand": "npm install",
+    "settings": {
+      "editor.formatOnSave": true
+    },
+    // "remoteUser": "node",
+    "runArgs": ["--network=host"]
+  }
+  
